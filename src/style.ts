@@ -26,6 +26,7 @@ export const ContainerLogin = styled.div`
     }
     @media screen and (max-width:780px){
         width: 100%;
+        background-color: transparent;
     }
 `;
 export const ContainerLoginDisplay = styled.div`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "../src/assets/images/background.jpg"
+import background from "../../assets/images/background.jpg"
 export const ContainerGeneral = styled.main`
     background-image:url(${background});
     background-position: center;

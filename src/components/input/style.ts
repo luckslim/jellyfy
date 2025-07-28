@@ -10,7 +10,7 @@ export const StyleInput = styled.input`
     &:focus{
         outline: none;
         border:1px solid ${props=>props.theme['slate-50']};
-        box-shadow: 0 0 0 3px ${props => props.theme['slate-600']};
+        box-shadow: 0 0 0 3px  ${props => props.theme['slate-800']};
     }
     &::placeholder{
         color: ${props=>props.theme['slate-300']};

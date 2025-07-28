@@ -1,11 +1,12 @@
 import { StyleInput } from "./style";
 type Props = {
+    type: string
     placeholder:string
 }
-export function Input({placeholder}:Props){
+export function Input({placeholder, type}:Props){
     return (
         <>
-            <StyleInput placeholder={placeholder}>
+            <StyleInput type={type} placeholder={placeholder}>
             </StyleInput>
         </>
     )

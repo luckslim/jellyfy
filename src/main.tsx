@@ -10,7 +10,6 @@ createRoot(document.getElementById("root")!).render(
     <ThemeProvider theme={defaultTheme}>
       <Router />
       <GlobalStyle />
-      {/* <App /> */}
     </ThemeProvider>
   </StrictMode>
 );

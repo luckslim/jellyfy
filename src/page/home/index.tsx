@@ -1,7 +1,16 @@
+import { Feed } from "./feed";
+import { Sidebar } from "./sidebar";
+import { Social } from "./social";
+import { ContainerGeneralHome } from "./style";
+
 export function HomePage(){
     return(
         <>
-        <h1>home</h1>
+            <ContainerGeneralHome>
+                <Sidebar/>
+                <Feed/>
+                <Social/>
+            </ContainerGeneralHome>
         </>
     )
 }

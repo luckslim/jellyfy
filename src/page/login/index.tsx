@@ -4,9 +4,9 @@ import {
   ContainerLoginDisplay,
 } from "./style";
 import logo from "./assets/images/logo-jellyfy.svg";
-import { Button } from "./components/button";
-import { Input } from "./components/input";
-export function App() {
+import { Button } from "../../components/button";
+import { Input } from "../../components/input";
+export function Login() {
   return (
     <>
       <ContainerGeneral>

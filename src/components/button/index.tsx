@@ -4,11 +4,12 @@ type Props = {
   name: string;
   type?: ButtonType ;
   urlImage?:string;
+  onClick?:()=>void;
 };
-export function Button({ name, urlImage,type }: Props) {
+export function Button({ name, urlImage,type, onClick}: Props) {
   return (
     <>
-      <StyledButton type={type}>
+      <StyledButton onClick={onClick} type={type}>
         {name}
         {urlImage && (<img src={urlImage} alt="" />)}
       </StyledButton>

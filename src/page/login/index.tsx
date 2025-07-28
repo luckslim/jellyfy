@@ -6,7 +6,12 @@ import {
 import logo from "../../assets/images/logo-jellyfy.svg";
 import { Button } from "../../components/button";
 import { Input } from "../../components/input";
+import { useNavigate } from "react-router";
 export function Login() {
+  const navigate = useNavigate();
+  function handleNavigate(){
+    navigate("/home")
+  }
   return (
     <>
       <ContainerGeneral>
@@ -31,7 +36,7 @@ export function Login() {
             </div>
             <Input type="text" placeholder="Insira o Usuário" />
             <Input type="password" placeholder="Insira a Senha" />
-            <Button type="submit" name="Entrar" />
+            <Button onClick={handleNavigate}  type="submit" name="Entrar"/>
           </ContainerLoginDisplay>
         </ContainerLogin>
       </ContainerGeneral>

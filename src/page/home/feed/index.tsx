@@ -1,7 +1,14 @@
+import { CreatePostInFeed } from "./create-post";
+import { FeedIn } from "./FeedIn";
+import { ContainerGeneralFeed } from "./style";
+
 export function Feed(){
     return(
         <>
-        <h1>Feed</h1>
+        <ContainerGeneralFeed>
+            <CreatePostInFeed/>
+            <FeedIn/>
+        </ContainerGeneralFeed>
         </>
     )
 }

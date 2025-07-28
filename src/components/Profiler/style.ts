@@ -6,9 +6,9 @@ export const ContainerGeneralProfiler = styled.main`
     align-items: center;
     justify-content: center;
     height: fit-content;
-    background-color: ${props=>props.theme['slate-900']};
-    padding: 1rem;
     border-radius: 4px;
+    border: 1px solid ${props=>props.theme['slate-700']};
+    padding: 1rem;
     img{
         width: 50px;
         border-radius: 8px;

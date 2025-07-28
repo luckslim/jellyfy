@@ -23,20 +23,20 @@ export function Login() {
             <div>
               <span>
                 <Button
-                  type="submit"
+                  type="primary"
                   urlImage="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
                   name="Logar com Google"
                 />
               </span>
               <Button
-                type="submit"
+                type="primary"
                 urlImage="https://cdn-icons-png.flaticon.com/512/25/25231.png"
                 name="Logar com Github"
               />
             </div>
             <Input type="text" placeholder="Insira o Usuário" />
             <Input type="password" placeholder="Insira a Senha" />
-            <Button onClick={handleNavigate}  type="submit" name="Entrar"/>
+            <Button onClick={handleNavigate}  type="primary" name="Entrar"/>
           </ContainerLoginDisplay>
         </ContainerLogin>
       </ContainerGeneral>

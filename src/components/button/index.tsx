@@ -1,8 +1,7 @@
-import { StyledButton } from "./style";
-type ButtonType = "button"|"submit"|"reset"
+import { StyledButton, type ButtonTypeProps, } from "./style";
 type Props = {
   name: string;
-  type?: ButtonType ;
+  type?: ButtonTypeProps ;
   urlImage?:string;
   onClick?:()=>void;
 };

@@ -4,6 +4,7 @@ export const ContainerGeneralInviteFriends =styled.div`
     display: flex;
     align-items: center;
     padding: 1rem;
+    margin-right: 1px;
     gap:1rem;
     cursor: pointer;
     img{

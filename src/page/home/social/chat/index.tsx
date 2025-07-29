@@ -11,6 +11,10 @@ export function Chat() {
                     <ProfilerChat />
                     <ProfilerChat />
                     <ProfilerChat />
+                    <ProfilerChat />
+                    <ProfilerChat />
+                    <ProfilerChat />
+                    <ProfilerChat />
                 </div>
             </ContainerGeneralChat>
         </>

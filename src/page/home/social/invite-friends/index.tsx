@@ -10,11 +10,17 @@ export function InviteFriends() {
     return (
         <>
             <ContainerGeneralInviteFriends>
-                <span onClick={handleInviteFriends}>Solicitações de Amizade <CaretDoubleDownIcon  size={15} weight="regular" /></span>
+                <span onClick={handleInviteFriends}>Solicitações de Amizade <CaretDoubleDownIcon size={15} weight="regular" /></span>
                 <div>{state && (
                     <>
-                    <ProfilerInviteFriends />
-                    <ProfilerInviteFriends />
+                        <ProfilerInviteFriends />
+                        <ProfilerInviteFriends />
+                        <ProfilerInviteFriends />
+                        <ProfilerInviteFriends />
+                        <ProfilerInviteFriends />
+                        <ProfilerInviteFriends />
+                        <ProfilerInviteFriends />
+                        <ProfilerInviteFriends />
                     </>
                 )}
                 </div>

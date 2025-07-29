@@ -19,5 +19,18 @@ export const ContainerGeneralInviteFriends = styled.div`
         gap: 1rem;
         cursor: pointer;
     }
+    div{
+        max-height: 300px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar{
+        border-radius: 4px;
+        width: 5px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: ${props=>props.theme['slate-50']};
+            border-radius: 4px;
+        }
+
+    }
 
 `;

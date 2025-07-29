@@ -8,6 +8,8 @@ export function Feed(){
         <ContainerGeneralFeed>
             <CreatePostInFeed/>
             <FeedIn/>
+            <FeedIn/>
+            <FeedIn/>
         </ContainerGeneralFeed>
         </>
     )

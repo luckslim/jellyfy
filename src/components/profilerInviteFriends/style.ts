@@ -11,7 +11,7 @@ export const ContainerGeneralInviteFriends =styled.div`
         width: 40px;
         height: 40px;
         border-radius: 999px;
-        border: 1px solid ${props=>props.theme['pink-500']};
+        border: 1px solid ${props=>props.theme['blue-500']};
     }
     div{
         small{

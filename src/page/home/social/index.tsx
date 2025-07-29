@@ -1,15 +1,13 @@
-import { ChatCircleDotsIcon } from "@phosphor-icons/react";
-import { Profiler } from "../../../components/Profiler";
+import { Chat } from "./chat";
+import { InviteFriends } from "./invite-friends";
 import { ContainerGeneralSocial } from "./style";
 
 export function Social() {
   return (
     <>
       <ContainerGeneralSocial>
-        <div>
-          <Profiler />
-          <ChatCircleDotsIcon size={22} />
-        </div>
+        <InviteFriends/>
+        <Chat/>
       </ContainerGeneralSocial>
     </>
   );

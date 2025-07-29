@@ -12,6 +12,7 @@ export const ContainerGeneralSidebar = styled.div`
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        font-weight: 200;
+        font-weight: 300;
+        font-size: larger;
     }
 `;

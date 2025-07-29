@@ -32,4 +32,4 @@ export const ContainerGeneralInviteFriends =styled.div`
         background-color: ${props=>props.theme['slate-900']};
     }
 `;
-export const StyleSpan = styled.span``;
+export const StyleSpan = styled.div``;

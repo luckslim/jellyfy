@@ -1,5 +1,5 @@
-import { ChatCircleDotsIcon } from "@phosphor-icons/react";
-import { ContainerGeneralInviteFriends } from "./style";
+import { CheckIcon,XIcon } from "@phosphor-icons/react";
+import { ContainerGeneralInviteFriends, StyleSpan } from "./style";
 
 export function ProfilerInviteFriends(){
     return(
@@ -10,7 +10,10 @@ export function ProfilerInviteFriends(){
                     <p>Lucas Soares</p>
                     <small>@lucassoareslim3</small>
                 </div>
-                <ChatCircleDotsIcon size={22} />
+                <StyleSpan>
+                   <XIcon color="#fa0000" size={25} weight="fill" />
+                   <CheckIcon color="#00f014" size={25} weight="fill" />
+                </StyleSpan>
             </ContainerGeneralInviteFriends>
         </>
     )

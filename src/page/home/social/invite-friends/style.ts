@@ -12,6 +12,11 @@ export const ContainerGeneralInviteFriends = styled.div`
         font-weight: 500;
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        cursor: pointer;
     }
 
 `;

@@ -17,7 +17,19 @@ export const ContainerGeneralInviteFriends =styled.div`
             color: ${props=>props.theme['slate-600']};
         }
     }
+    span{
+        display: flex;
+        gap: 1px;
+        background-color: ${props=>props.theme['slate-950']};
+        button{
+            display: flex;
+            background-color: ${props=>props.theme['slate-50']};
+            border: none;
+            cursor: pointer;
+        }
+    }
     &:hover{
         background-color: ${props=>props.theme['slate-900']};
     }
 `;
+export const StyleSpan = styled.span``;

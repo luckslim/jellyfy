@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContainerGeneralProfilerChat = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding: 1rem;
     gap:1rem;
     cursor: pointer;

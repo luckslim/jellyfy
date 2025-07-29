@@ -4,8 +4,6 @@ export const ContainerGeneralSidebar = styled.div`
     display: grid;
     grid: 1;
     gap: 1rem;
-    padding-right:2rem;
-    border-right: 1px solid ${props=>props.theme['slate-700']};
     div{
         display: grid;
         gap: 0.5rem;

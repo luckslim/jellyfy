@@ -1,5 +1,5 @@
 import { CreatePostInFeed } from "./create-post";
-import { FeedIn } from "./FeedIn";
+import { FeedIn } from "./feedIn";
 import { ContainerGeneralFeed } from "./style";
 
 export function Feed(){

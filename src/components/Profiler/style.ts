@@ -7,7 +7,6 @@ export const ContainerGeneralProfiler = styled.main`
     justify-content: center;
     height: fit-content;
     border-radius: 4px;
-    border: 1px solid ${props=>props.theme['slate-700']};
     padding: 1rem;
     img{
         width: 50px;

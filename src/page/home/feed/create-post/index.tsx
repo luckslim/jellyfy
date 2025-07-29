@@ -1,17 +1,12 @@
-import { Button } from "../../../../components/button";
-import { TextArea } from "../../../../components/textarea";
-import { GeneralCreatePostFeed } from "./style";
+import { Comments } from "../../../../components/comments";
+import { ContainerGeneralPost } from "./style";
 
-export function CreatePostInFeed() {
-    return (
+export function CreatePostInFeed(){
+    return(
         <>
-            <GeneralCreatePostFeed>
-                <TextArea />
-                <div>
-                    <Button type="primary" name="Postar" />
-                    
-                </div>
-            </GeneralCreatePostFeed>
+            <ContainerGeneralPost>
+                <Comments urlImage="https://avatars.githubusercontent.com/u/95627552?v=4"/>
+            </ContainerGeneralPost>
         </>
     )
 }

@@ -1,14 +1,16 @@
-import { ContainerGeneralMessage } from "./style";
+import { ContainerGeneralMessage, type ButtonProps } from "./style";
 type Props = {
-    text?: string;
-    typeIdMessage?: string;
-}
-export function Message({text}:Props){
-    return(
-        <>
-            <ContainerGeneralMessage>
-                {text}
-            </ContainerGeneralMessage>
-        </>
-    )
+  text?: string;
+  typeIdMessage?: ButtonProps;
+};
+export function Message({ text, typeIdMessage }: Props) {
+  return (
+    <>
+      <ContainerGeneralMessage type={typeIdMessage}>
+        <span>
+          <p>{text}</p>
+        </span>
+      </ContainerGeneralMessage>
+    </>
+  );
 }

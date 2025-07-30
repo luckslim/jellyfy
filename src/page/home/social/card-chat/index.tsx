@@ -14,7 +14,10 @@ export function CardChat() {
                 </ContainerHeaderCardChat>
                 <ContainerBodyCardChat>
                     <ContainerBodyMessages>
-                        <Message  text="hello world!"/>
+                        <Message typeIdMessage="IdFriend"  text="hello world!"/>
+                        <Message typeIdMessage="IdMe"  text="hello dddddddddddddddddddddddddddddddddddddddddworld!"/>
+                        <Message typeIdMessage="IdFriend"  text="hello world!"/>
+
                     </ContainerBodyMessages>
                     <ContainerDisplayChat>
                         <Input type="" placeholder="Sua Mensagem"/>

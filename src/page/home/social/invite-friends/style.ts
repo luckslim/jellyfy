@@ -8,7 +8,6 @@ export const ContainerGeneralInviteFriends = styled.div`
     border-radius: 8px;
     span{
         background-color: ${props=>props.theme['slate-50']};
-        padding: 1rem;
         color: ${props=>props.theme['slate-950']};
         font-weight: 500;
         border-top-right-radius: 8px;
@@ -18,9 +17,10 @@ export const ContainerGeneralInviteFriends = styled.div`
         justify-content: center;
         gap: 1rem;
         cursor: pointer;
+        padding: 0.5rem 0;
     }
     div{
-        max-height: 300px;
+        max-height: 285px;
         overflow-y: scroll;
         &::-webkit-scrollbar{
         border-radius: 4px;

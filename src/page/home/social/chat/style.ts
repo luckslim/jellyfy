@@ -7,14 +7,16 @@ export const ContainerGeneralChat = styled.div`
     border: 1px solid ${props => props.theme['slate-600']};
     border-radius: 8px;
     span{
-        background-color: ${props => props.theme['slate-50']};
-        color: ${props => props.theme['slate-950']};
+        background-color: ${props => props.theme['slate-900']};
+        color: ${props => props.theme['slate-50']};
+        padding: 0.4rem;
         font-weight: 500;
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
+        border-bottom: 1px solid ${props=>props.theme['slate-800']};
     }
     div{
-        max-height: 300px;
+        max-height: 285px;
         overflow-y: scroll;
         &::-webkit-scrollbar{
         border-radius: 4px;

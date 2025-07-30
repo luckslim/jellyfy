@@ -7,6 +7,7 @@ export const StyleInput = styled.input`
     font-size: 1rem;
     border: 1px solid ${props=>props.theme['slate-600']};
     color: ${props=>props.theme['slate-300']};
+    width: 100%;
     &:focus{
         outline: none;
         border:1px solid ${props=>props.theme['slate-50']};

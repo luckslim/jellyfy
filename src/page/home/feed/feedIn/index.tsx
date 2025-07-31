@@ -34,7 +34,7 @@ export function FeedIn() {
           quisquam necessitatibus.
         </p>
         <StyleImage
-          src="https://storage.caosplanejado.com/uploads/2020/11/ny.jpg"
+          src="https://forbes.com.br/wp-content/uploads/2023/06/tech-ia-empresas-15Jun23-AdobeStock.jpg"
           alt=""
         />
         {state && <CardCommentResp />}

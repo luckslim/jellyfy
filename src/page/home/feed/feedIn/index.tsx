@@ -1,24 +1,27 @@
 import {
+  ChatCenteredDotsIcon,
+  CoinVerticalIcon,
   CurrencyDollarIcon,
-  DatabaseIcon,
   DotsThreeOutlineVerticalIcon,
-  FileIcon,
-  GitBranchIcon,
+  HeartIcon,
   ImageSquareIcon,
-  UserPlusIcon,
-  VideoCameraIcon,
 } from "@phosphor-icons/react";
 import { Profiler } from "../../../../components/Profiler";
-import { ContainerGeneralFeedIn, StyleImage } from "./style";
+import { ContainerGeneralComments, ContainerGeneralFeedIn, StyleImage } from "./style";
 import { Actions } from "../../../../components/actions";
 import { Button } from "../../../../components/button";
 import { CardCommentResp } from "../../../../components/card-comment-response";
 import { useState } from "react";
+import { CommentsToPost } from "../../../../components/comments-to-post";
 
 export function FeedIn() {
-  const [state, setState] = useState(false);
-  function handleStateComments() {
-    setState((prev) => !prev);
+  const [stateInsertComments, setStateInsertComments] = useState(false);
+  const [stateShowComments, setStateShowComments] = useState(false)
+  function handleStateInsertComments() {
+    setStateInsertComments((prev) => !prev);
+  }
+  function handleShowComments() {
+    setStateShowComments((prev) => !prev)
   }
   return (
     <>
@@ -37,22 +40,18 @@ export function FeedIn() {
           src="https://forbes.com.br/wp-content/uploads/2023/06/tech-ia-empresas-15Jun23-AdobeStock.jpg"
           alt=""
         />
-        {state && <CardCommentResp />}
+        {stateInsertComments && <CardCommentResp />}
         <div>
           <Actions
             icons={[
-              { icon: ImageSquareIcon, onClick: () => "void" },
-              { icon: VideoCameraIcon, onClick: () => "void" },
-              { icon: GitBranchIcon, onClick: () => "void" },
-              { icon: UserPlusIcon, onClick: () => "void" },
-              { icon: CurrencyDollarIcon, onClick: () => "void" },
-              { icon: FileIcon, onClick: () => "void" },
-              { icon: DatabaseIcon, onClick: () => "void" },
+              { icon: HeartIcon, text: 120, onClick: () => "void" },
+              { icon: ChatCenteredDotsIcon, text: 50, onClick: handleShowComments },
+              { icon: CoinVerticalIcon, text: 30, onClick: () => "void" },
             ]}
           />
 
           <Button
-            onClick={handleStateComments}
+            onClick={handleStateInsertComments}
             name="Comentar"
             type="secondary"
           />

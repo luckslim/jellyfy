@@ -1,10 +1,12 @@
 import { ChatCircleDotsIcon } from "@phosphor-icons/react";
 import { ContainerGeneralProfilerChat } from "./style";
-
-export function ProfilerChat(){
+type Props = {
+    onClick?: ()=>void;
+}
+export function ProfilerChat({onClick}:Props){
     return(
         <>
-            <ContainerGeneralProfilerChat>
+            <ContainerGeneralProfilerChat onClick={onClick}>
                 <img src="https://avatars.githubusercontent.com/u/95627552?v=4" alt="" />
                 <div>
                     <p>Lucas Soares</p>

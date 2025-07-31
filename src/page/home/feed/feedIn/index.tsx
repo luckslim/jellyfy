@@ -1,10 +1,25 @@
-import { CurrencyDollarIcon, DatabaseIcon, DotsThreeOutlineVerticalIcon, FileIcon, GitBranchIcon, ImageSquareIcon, UserPlusIcon, VideoCameraIcon } from "@phosphor-icons/react";
+import {
+  CurrencyDollarIcon,
+  DatabaseIcon,
+  DotsThreeOutlineVerticalIcon,
+  FileIcon,
+  GitBranchIcon,
+  ImageSquareIcon,
+  UserPlusIcon,
+  VideoCameraIcon,
+} from "@phosphor-icons/react";
 import { Profiler } from "../../../../components/Profiler";
 import { ContainerGeneralFeedIn, StyleImage } from "./style";
 import { Actions } from "../../../../components/actions";
 import { Button } from "../../../../components/button";
+import { CardCommentResp } from "../../../../components/card-comment-response";
+import { useState } from "react";
 
 export function FeedIn() {
+  const [state, setState] = useState(false);
+  function handleStateComments() {
+    setState((prev) => !prev);
+  }
   return (
     <>
       <ContainerGeneralFeedIn>
@@ -22,6 +37,7 @@ export function FeedIn() {
           src="https://storage.caosplanejado.com/uploads/2020/11/ny.jpg"
           alt=""
         />
+        {state && <CardCommentResp />}
         <div>
           <Actions
             icons={[
@@ -34,7 +50,12 @@ export function FeedIn() {
               { icon: DatabaseIcon, onClick: () => "void" },
             ]}
           />
-          <Button name="Comentar" type="secondary" />
+
+          <Button
+            onClick={handleStateComments}
+            name="Comentar"
+            type="secondary"
+          />
         </div>
       </ContainerGeneralFeedIn>
     </>

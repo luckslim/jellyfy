@@ -7,6 +7,7 @@ export const ContainerGeneralMessage = styled.button<Props>`
     background-color: transparent;
     border: none;
     width: 100%;
+    padding: 0.2rem 0;
     display: flex;
     justify-content: ${({ type }) => type == 'IdMe' ? 'end' : 'start'};
     span{

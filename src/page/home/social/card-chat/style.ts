@@ -5,9 +5,9 @@ export const ContainerGeneralCardChat = styled.div`
     position: fixed;
     left: 1rem;
     bottom: 1rem;
-    border: 1px solid ${props=>props.theme['slate-700']};
+    border: 1px solid ${props => props.theme['slate-700']};
     border-radius: 8px;
-    background-color: ${props=>props.theme['slate-950']};
+    background-color: ${props => props.theme['slate-950']};
     width: 400px;
     max-height: 500px;
     display: flex;
@@ -22,13 +22,13 @@ export const ContainerHeaderCardChat = styled.div`
     justify-content: space-between;
     flex: 1;
     height: fit-content;
-    background-color: ${props=>props.theme['slate-900']};
+    background-color: ${props => props.theme['slate-900']};
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 `;
 export const StyleXIcon = styled(XIcon)`
     margin-right: 1rem;
-    border: 1px solid ${props=>props.theme['slate-700']};
+    border: 1px solid ${props => props.theme['slate-700']};
     border-radius: 4px;
     cursor: pointer;
     &:hover{
@@ -36,6 +36,8 @@ export const StyleXIcon = styled(XIcon)`
     }
 `;
 export const ContainerBodyCardChat = styled.div`
+    display: grid;
+    gap: 1rem;
     padding: 1rem;
     height: fit-content;
 `;
@@ -44,6 +46,18 @@ export const ContainerDisplayChat = styled.div`
     gap: 1rem;
     justify-content: space-between;
 `;
-export const ContainerBodyMessages =styled.div`
+export const ContainerBodyMessages = styled.div`
+    display: grid;
+    grid: 1;
+    padding: 0 1rem;
     height: 300px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+    border-radius: 4px;
+    width: 5px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: ${props => props.theme['slate-50']};
+        border-radius: 4px;
+    }
 `;

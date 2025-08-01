@@ -19,7 +19,7 @@ export function Actions({icons}:Props) {
           return (
             <div key={index}>
               {item.text}
-              {Icon &&  <Icon onClick={item.onClick} size={22}/>}
+              {Icon &&  <Icon onClick={item.onClick} weight="fill" size={22}/>}
             </div>
           )
         })}

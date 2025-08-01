@@ -56,7 +56,19 @@ export function FeedIn() {
             type="secondary"
           />
         </div>
+
       </ContainerGeneralFeedIn>
+      {stateShowComments && (
+      <ContainerGeneralComments>
+        <CommentsToPost />
+        <CommentsToPost />
+        <CommentsToPost />
+        <CommentsToPost />
+        <CommentsToPost />
+        <CommentsToPost />
+      </ContainerGeneralComments>
+      )}
+
     </>
   );
 }

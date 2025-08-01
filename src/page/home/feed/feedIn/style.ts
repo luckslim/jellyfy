@@ -5,7 +5,6 @@ export const ContainerGeneralFeedIn = styled.div`
     gap: 1rem;
     width: 600px;
     padding-bottom: 1rem;
-    border-bottom: 1px solid ${props=>props.theme['slate-800']};
     div{
         display: flex;
         justify-content: space-between;

@@ -25,7 +25,7 @@ export const ContainerGeneralCommentsToPost = styled.div`
         }
     }
     p{
-        width: 600px;
+        width: 500px;
         color: ${props=>props.theme['slate-400']};
         font-size: 14px;
     }

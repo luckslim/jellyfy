@@ -1,10 +1,8 @@
 import {
   ChatCenteredDotsIcon,
   CoinVerticalIcon,
-  CurrencyDollarIcon,
   DotsThreeOutlineVerticalIcon,
   HeartIcon,
-  ImageSquareIcon,
 } from "@phosphor-icons/react";
 import { Profiler } from "../../../../components/Profiler";
 import { ContainerGeneralComments, ContainerGeneralFeedIn, StyleImage } from "./style";

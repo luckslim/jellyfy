@@ -4,6 +4,7 @@ import {
   FileIcon,
   GitBranchIcon,
   ImageSquareIcon,
+  PenNibIcon,
   UserPlusIcon,
   VideoCameraIcon,
 } from "@phosphor-icons/react";
@@ -36,7 +37,7 @@ export function Comments({ contentText, urlImage }: Props) {
               { icon: DatabaseIcon, onClick: () => "void" },
             ]}
           />
-          <Button name="Postar" type="primary" />
+          <Button icon={[{icon: PenNibIcon}]} name="Postar"  type="primary" />
         </span>
       </ContainerGeneralComments>
     </>

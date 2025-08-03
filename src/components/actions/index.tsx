@@ -1,5 +1,5 @@
 import { type IconProps } from "@phosphor-icons/react";
-import { ContainerGeneralActions } from "./style";
+import { ContainerGeneralActions, StyleIcon } from "./style";
 type IconType = React.ComponentType<IconProps>
 type ActionItem = {
   icon?: IconType;
@@ -17,10 +17,10 @@ export function Actions({icons}:Props) {
         {icons?.map((item,index)=>{
           const Icon = item.icon
           return (
-            <div key={index}>
+            <StyleIcon onClick={item.onClick} key={index}>
               {item.text}
-              {Icon &&  <Icon onClick={item.onClick} weight="fill" size={22}/>}
-            </div>
+              {Icon &&  <Icon  weight="fill" size={22}/>}
+            </StyleIcon>
           )
         })}
       </ContainerGeneralActions>

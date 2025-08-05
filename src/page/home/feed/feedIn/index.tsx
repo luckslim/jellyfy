@@ -42,9 +42,9 @@ export function FeedIn() {
         <div>
           <Actions
             icons={[
-              { icon: HeartIcon, text: 120, onClick: () => "void" },
+              { icon: HeartIcon, text: 120, color:"red", onClick: () => "void" },
               { icon: ChatCenteredDotsIcon, text: 50, onClick: handleShowComments },
-              { icon: CoinVerticalIcon, text: 30, onClick: () => "void" },
+              { icon: CoinVerticalIcon, text: 30, color:"yellow",onClick: () => "void" },
             ]}
           />
 

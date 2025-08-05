@@ -4,6 +4,7 @@ export const ContainerGeneralFeedIn = styled.div`
     display: grid;
     gap: 1rem;
     width: 600px;
+    border-bottom: 1px solid ${props=>props.theme['slate-800']};
     padding-bottom: 1rem;
     div{
         display: flex;

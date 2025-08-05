@@ -1,6 +1,6 @@
 import { StyleInput } from "./style";
 type Props = {
-    type: string
+    type?: string
     placeholder:string
 }
 export function Input({placeholder, type}:Props){

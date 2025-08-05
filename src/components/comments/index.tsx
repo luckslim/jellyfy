@@ -11,11 +11,13 @@ import {
 import { Actions } from "../actions";
 import { Button } from "../button";
 import { ContainerGeneralComments } from "./style";
+import { DisplayTagGithub } from "../tags/tag-github/display-insert";
+import { TagGithub } from "../tags/tag-github";
 type Props = {
   urlImage?: string;
   contentText?: string;
 };
-export function Comments({ contentText, urlImage }: Props) {
+export function PostComments({ contentText, urlImage }: Props) {
   return (
     <>
       <ContainerGeneralComments>
@@ -25,6 +27,8 @@ export function Comments({ contentText, urlImage }: Props) {
             {contentText}
           </textarea>
         </div>
+        <DisplayTagGithub />
+        <TagGithub urlRepository="https://avatars.githubusercontent.com/u/95627552?v=4" />
         <span>
           <Actions
             icons={[
@@ -37,7 +41,7 @@ export function Comments({ contentText, urlImage }: Props) {
               { icon: DatabaseIcon, onClick: () => "void" },
             ]}
           />
-          <Button icon={[{icon: PenNibIcon}]} name="Postar"  type="primary" />
+          <Button icon={[{ icon: PenNibIcon }]} name="Postar" type="primary" />
         </span>
       </ContainerGeneralComments>
     </>

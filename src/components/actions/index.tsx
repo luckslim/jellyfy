@@ -3,11 +3,13 @@ import { ContainerGeneralActions, StyleIcon } from "./style";
 type IconType = React.ComponentType<IconProps>
 type ActionItem = {
   icon?: IconType;
+  color?: string;
   text?: string | number;
   onClick?: ()=> void;
 }
 type Props = {
   icons?: ActionItem[];
+
 }
 export function Actions({icons}:Props) {
   return (
@@ -19,7 +21,7 @@ export function Actions({icons}:Props) {
           return (
             <StyleIcon onClick={item.onClick} key={index}>
               {item.text}
-              {Icon &&  <Icon  weight="fill" size={22}/>}
+              {Icon &&  <Icon  weight="fill" color={item.color ? item.color : "#ffff" } size={22}/>}
             </StyleIcon>
           )
         })}

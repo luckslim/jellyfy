@@ -7,6 +7,7 @@ export const ContainerGeneralActions = styled.div`
 `;
 export const StyleIcon = styled.div`
     display: flex;
+    align-items: center;
     border-radius: 999px;
     padding: 5px;
     &:hover{

@@ -7,7 +7,7 @@ export function CardCommentResp(){
         <>
             <ContainerGeneralCardCommentResp>
                 <img src="https://avatars.githubusercontent.com/u/95627552?v=4" alt="" />
-                <Input placeholder="" type=""/>
+                <Input  placeholder="" type=""/>
                 <Button name="enviar" type="secondary"  />
             </ContainerGeneralCardCommentResp>
         </>

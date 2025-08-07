@@ -3,7 +3,7 @@ import { StyleInput } from "./style";
 type Props = {
     type?: string;
     placeholder:string;
-    register: UseFormRegisterReturn;
+    register?: UseFormRegisterReturn;
 }
 export function Input({placeholder, type, register, ...rest}:Props){
     return (

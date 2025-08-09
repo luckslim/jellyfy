@@ -19,6 +19,9 @@ export const ContainerGeneralCommentsToPost = styled.div`
             display: flex;
             gap: 5px;
             align-items: center;
+            @media screen and (max-width:720px) {
+                font-size: 13px;
+            }
             small{
                 color: ${props=>props.theme['slate-600']};
             }
@@ -28,5 +31,8 @@ export const ContainerGeneralCommentsToPost = styled.div`
         width: 500px;
         color: ${props=>props.theme['slate-400']};
         font-size: 14px;
+        @media screen and (max-width:720px) {
+            width: 100%;
+        }
     }
 `;

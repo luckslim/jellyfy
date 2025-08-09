@@ -1,3 +1,4 @@
 import styled from "styled-components";
 
-export const ContainerGeneralPost = styled.div``;
+export const ContainerGeneralPost = styled.div`
+`;

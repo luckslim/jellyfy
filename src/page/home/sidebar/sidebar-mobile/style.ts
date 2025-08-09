@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
-export const ContainerGeneralSidebar = styled.div`
+export const ContainerGeneralSidebarMobile = styled.div`
     position: sticky;
     top: 2rem;
     align-self: flex-start;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     grid: 1;
     gap: 1rem;
     div{
@@ -19,13 +22,10 @@ export const ContainerGeneralSidebar = styled.div`
         font-size: larger;
     }
     @media only screen and (max-width: 1920px){
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: fit-content;
+        display: none;
     }
     @media only screen and (max-width: 720px){
-        display: none;
+        display: flex;
+        width: 20px;
     }
 `;

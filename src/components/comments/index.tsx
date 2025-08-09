@@ -129,7 +129,7 @@ export function PostComments({ contentText, urlImage }: Props) {
             onChange={handleImageChange}
           />
 
-          <Button icon={[{ icon: PenNibIcon }]} name="Postar" type="primary" />
+          <Button icon={[{ icon: PenNibIcon }]} type="primary"/>
         </span>
       </ContainerGeneralComments>
     </>

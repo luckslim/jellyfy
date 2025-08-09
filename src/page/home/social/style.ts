@@ -7,4 +7,7 @@ export const ContainerGeneralSocial =styled.div`
     display: grid;
     grid: 1;
     gap: 1rem;
+        @media only screen and (max-width: 720px){
+        display: none;
+    }
 `;

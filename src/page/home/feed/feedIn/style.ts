@@ -11,10 +11,16 @@ export const ContainerGeneralFeedIn = styled.div`
         justify-content: space-between;
         align-items: center;
     }
+    @media only screen and (max-width: 720px){
+        width: 100%
+    }
 `;
 export const StyleImage = styled.img`
     width: 600px;
     border-radius: 8px;
+    @media only screen and (max-width: 720px){
+        width: 100%;
+    }
 `;
 export const ContainerGeneralComments = styled.span`
     display: grid;

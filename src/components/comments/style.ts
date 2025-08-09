@@ -28,6 +28,20 @@ export const ContainerGeneralComments = styled.div`
             &:focus{
                 outline: none;
             }
+            @media only screen and (max-width:720px){
+                            background-color: ${props=>props.theme['slate-950']};
+            font-size: 1rem;
+            padding: 1rem;
+            color: ${props=>props.theme['slate-50']};
+            border: none;
+            max-width: 100%;
+            min-width: 200px;
+            max-height: 300px;
+            min-height: auto;
+            &:focus{
+                outline: none;
+            }
+            }
         }
     }
     span{

@@ -43,3 +43,10 @@ export const ContainerDisplayTagGithub = styled.form`
     align-items: center;
     width: fit-content;
 `;
+export const StyleImagePost = styled.img`
+    width: 300px;
+    height: 300px;
+    padding: 2px;
+    background-color: ${props=>props.theme['blue-500']};
+    border-radius: 8px;
+`;

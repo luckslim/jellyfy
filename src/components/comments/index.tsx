@@ -10,41 +10,77 @@ import {
 } from "@phosphor-icons/react";
 import { Actions } from "../actions";
 import { Button } from "../button";
-import { ContainerDisplayTagGithub, ContainerGeneralComments } from "./style";
-import { useEffect, useState } from "react";
+import {
+  ContainerDisplayTagGithub,
+  ContainerGeneralComments,
+  StyleImagePost,
+} from "./style";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import z from "zod";
 import { TagGithub } from "../tags/tag-github";
 import { Input } from "../input";
+
 type Props = {
   urlImage?: string;
   contentText?: string;
 };
+
+// Schema para repositório e imagem
 const schemaRepository = z.object({
-  urlRepository: z.string()
-})
-type SchemaRepository = z.infer<typeof schemaRepository>
+  urlRepository: z.string().optional(),
+  image: z
+    .instanceof(File)
+    .optional()
+    .refine(
+      (file) => !file || file.size <= 5 * 1024 * 1024,
+      "A imagem deve ter no máximo 5MB"
+    )
+    .refine(
+      (file) => !file || ["image/jpeg", "image/png"].includes(file.type),
+      "Formato inválido, use JPG ou PNG"
+    ),
+});
+
+type SchemaRepository = z.infer<typeof schemaRepository>;
+
 export function PostComments({ contentText, urlImage }: Props) {
-  const [stateRepositoryInsert, setStateRepositoryInsert] = useState(false)
-  const [stateRepository, setStateRepository] = useState('')
-  const { register, handleSubmit, reset } = useForm<SchemaRepository>({
-    resolver: zodResolver(schemaRepository)
-  })
+  const [stateRepositoryInsert, setStateRepositoryInsert] = useState(false);
+  const [stateRepository, setStateRepository] = useState("");
+  const [previewImage, setPreviewImage] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const { register, handleSubmit, reset, setValue } = useForm<SchemaRepository>(
+    {
+      resolver: zodResolver(schemaRepository),
+    }
+  );
   function handleSubmitRepository(data: SchemaRepository) {
-    setStateRepository(data.urlRepository)
+    if (data.urlRepository) {
+      setStateRepository(data.urlRepository);
+    }
     return stateRepository;
   }
+  function handleImageClick() {
+    fileInputRef.current?.click();
+  }
+  function handleImageChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (file) {
+      setValue("image", file);
+      setPreviewImage(URL.createObjectURL(file));
+    }
+  }
   function handleRepositoryInsert() {
-    setStateRepositoryInsert((prev) => !prev)
-
+    setStateRepositoryInsert((prev) => !prev);
   }
   useEffect(() => {
-  if (stateRepositoryInsert) {
-    reset({ urlRepository: "" });
-    setStateRepository("");
-  }
-}, [stateRepositoryInsert]);
+    if (stateRepositoryInsert) {
+      reset({ urlRepository: "" });
+      setStateRepository("");
+    }
+  }, [stateRepositoryInsert, reset]);
+
   return (
     <>
       <ContainerGeneralComments>
@@ -58,7 +94,9 @@ export function PostComments({ contentText, urlImage }: Props) {
           (stateRepository.length > 0 ? (
             <TagGithub urlRepository={stateRepository} />
           ) : (
-            <ContainerDisplayTagGithub onSubmit={handleSubmit(handleSubmitRepository)}>
+            <ContainerDisplayTagGithub
+              onSubmit={handleSubmit(handleSubmitRepository)}
+            >
               <Input
                 type="text"
                 register={{ ...register("urlRepository") }}
@@ -67,10 +105,11 @@ export function PostComments({ contentText, urlImage }: Props) {
               <Button type="secondary" name="ok" />
             </ContainerDisplayTagGithub>
           ))}
+        {previewImage && <StyleImagePost src={previewImage} alt="" />}
         <span>
           <Actions
             icons={[
-              { icon: ImageSquareIcon, onClick: () => "void" },
+              { icon: ImageSquareIcon, onClick: handleImageClick },
               { icon: VideoCameraIcon, onClick: () => "void" },
               { icon: GitBranchIcon, onClick: handleRepositoryInsert },
               { icon: UserPlusIcon, onClick: () => "void" },
@@ -79,6 +118,17 @@ export function PostComments({ contentText, urlImage }: Props) {
               { icon: DatabaseIcon, onClick: () => "void" },
             ]}
           />
+
+          {/* Input escondido para imagem */}
+          <input
+            type="file"
+            accept="image/*"
+            {...register("image")}
+            ref={fileInputRef}
+            style={{ display: "none" }}
+            onChange={handleImageChange}
+          />
+
           <Button icon={[{ icon: PenNibIcon }]} name="Postar" type="primary" />
         </span>
       </ContainerGeneralComments>

@@ -27,7 +27,7 @@
 
 | Tecnologia     | Descrição |
 |----------------|-----------|
-| ⚛️ **React.js**      | Framework React para SSR, SSG e API routes |
+| ⚛️ **React.js**      | Framework React |
 | 🐇 **Node.js/Fastify**      | 🐇 Node.js + Fastify	Plataforma e framework backend altamente performáticos, ideais para APIs rápidas e escaláveis. |
 |🐘 **PostgreSQL**| Banco de dados relacional robusto, com suporte avançado a consultas SQL e excelente integridade de dados. |
 | 💳 **Stripe**       | Compra de Moedas JellyCoins |

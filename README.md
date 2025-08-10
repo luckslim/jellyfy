@@ -1,11 +1,12 @@
-# 🚀 Checkout StarBucks
+# 🚀 Jellyfy
 
 ![status](https://img.shields.io/badge/status-Concluído-green?style=flat-square)
 ![licença](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 ![pull-requests](https://img.shields.io/badge/PRs-bem%20vindos-brightgreen?style=flat-square)
 ![GitHub Stars](https://img.shields.io/github/stars/seuusuario/repositorio?style=social)
 
-> 🧾 Um sistema moderno de checkout com comanda digital. Clientes selecionam os produtos, pagam com Stripe e retiram no balcão! Ideal para cafeterias e lanchonetes 🍩☕️
+> 🧾 Uma rede Social para Desenvolvedores de software,elabore suas ideias e compartilhe conhecimento com a comunidade
+> Jellyfy <img src="https://jellyfyproject.vercel.app/assets/logo-jellyfy-DUknvvfn.svg" width="30" />
 
 ---
 

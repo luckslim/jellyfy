@@ -1,69 +1,65 @@
-# React + TypeScript + Vite
+# 🚀 Checkout StarBucks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![status](https://img.shields.io/badge/status-Concluído-green?style=flat-square)
+![licença](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+![pull-requests](https://img.shields.io/badge/PRs-bem%20vindos-brightgreen?style=flat-square)
+![GitHub Stars](https://img.shields.io/github/stars/seuusuario/repositorio?style=social)
 
-Currently, two official plugins are available:
+> 🧾 Um sistema moderno de checkout com comanda digital. Clientes selecionam os produtos, pagam com Stripe e retiram no balcão! Ideal para cafeterias e lanchonetes 🍩☕️
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🖼️ Preview
+<p>
+  <strong>Acesse o Link do Deploy:</strong>
+  <a href="https://star-bucks-deploy-vercel.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Deploy%20na%20Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
+</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<div align="center">
+  <img src="screenHome.png" alt="Preview da Home" width="30%" />
+   <img src="screenproducts.png" alt="Preview da Home" width="50%" />
+</div>
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tecnologias Utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Tecnologia     | Descrição |
+|----------------|-----------|
+| ⚡ **Next.js**      | Framework React para SSR, SSG e API routes |
+| 🐍 **Node.js**      | Backend JavaScript leve e performático |
+| 🍃 **MongoDB Atlas** | Banco de dados NoSQL gerenciado na nuvem |
+| 💳 **Stripe**       | Pagamentos online com checkout integrado |
+| 🔐 **NextAuth.js**  | Autenticação moderna com provedores como Google |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✨ Features
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🔐 Login com conta Google
+- 🛒 Adição de produtos ao carrinho
+- 💳 Pagamento com Stripe
+- 📄 Geração de comanda digital (ID)
+- 🧾 Histórico de pedidos
+- 📱 Interface friendly
+- 🚀 Deploy em Vercel
+
+---
+
+## 🚀 Como rodar localmente
+
+```bash
+# Clone o repositório
+git clone <link do repositório >
+
+# Entre na pasta
+cd seuprojeto
+
+# Instale as dependências
+npm install
+
+# Configure ou crie o arquivo .env (Stripe, Auth, DB, etc.)
+
+# Rode a aplicação
+npm run dev

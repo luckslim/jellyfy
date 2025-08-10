@@ -1,6 +1,6 @@
 # 🚀 Jellyfy <img src="https://jellyfyproject.vercel.app/assets/logo-jellyfy-DUknvvfn.svg" width="30" />
 
-![status](https://img.shields.io/badge/status-Concluído-green?style=flat-square)
+![status](https://img.shields.io/badge/status-Development-gray?style=flat-square)
 ![licença](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 ![pull-requests](https://img.shields.io/badge/PRs-bem%20vindos-brightgreen?style=flat-square)
 ![GitHub Stars](https://img.shields.io/github/stars/seuusuario/repositorio?style=social)
@@ -19,20 +19,19 @@
 </p>
 
 <div align="center">
-  <img src="screenHome.png" alt="Preview da Home" width="30%" />
-   <img src="screenproducts.png" alt="Preview da Home" width="50%" />
+  <img src="screen.png" alt="Preview da Home" width="30%" />
 </div>
 
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
 | Tecnologia     | Descrição |
 |----------------|-----------|
-| ⚡ **Next.js**      | Framework React para SSR, SSG e API routes |
-| 🐍 **Node.js**      | Backend JavaScript leve e performático |
-| 🍃 **MongoDB Atlas** | Banco de dados NoSQL gerenciado na nuvem |
-| 💳 **Stripe**       | Pagamentos online com checkout integrado |
-| 🔐 **NextAuth.js**  | Autenticação moderna com provedores como Google |
+| ⚛️ **React.js**      | Framework React para SSR, SSG e API routes |
+| 🐇 **Node.js/Fastify**      | 🐇 Node.js + Fastify	Plataforma e framework backend altamente performáticos, ideais para APIs rápidas e escaláveis. |
+|🐘 **PostgreSQL**| Banco de dados relacional robusto, com suporte avançado a consultas SQL e excelente integridade de dados. |
+| 💳 **Stripe**       | Compra de Moedas JellyCoins |
+| 🔐 **0Auth**  | Autenticação moderna com provedores como Google e Github |
 
 ---
 
@@ -45,22 +44,4 @@
 - 🧾 Histórico de pedidos
 - 📱 Interface friendly
 - 🚀 Deploy em Vercel
-
 ---
-
-## 🚀 Como rodar localmente
-
-```bash
-# Clone o repositório
-git clone <link do repositório >
-
-# Entre na pasta
-cd seuprojeto
-
-# Instale as dependências
-npm install
-
-# Configure ou crie o arquivo .env (Stripe, Auth, DB, etc.)
-
-# Rode a aplicação
-npm run dev

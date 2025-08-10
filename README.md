@@ -5,7 +5,7 @@
 ![pull-requests](https://img.shields.io/badge/PRs-bem%20vindos-brightgreen?style=flat-square)
 ![GitHub Stars](https://img.shields.io/github/stars/seuusuario/repositorio?style=social)
 
-> 🧾 Uma rede Social para Desenvolvedores de software,elabore suas ideias e compartilhe conhecimento com a comunidade
+> 🧾 Uma rede Social para Desenvolvedores de software, elabore suas ideias e compartilhe conhecimento com a comunidade.
 
 
 ---
@@ -13,7 +13,7 @@
 ## 🖼️ Preview
 <p>
   <strong>Acesse o Link do Deploy:</strong>
-  <a href="https://star-bucks-deploy-vercel.vercel.app/" target="_blank">
+  <a href="https://jellyfyproject.vercel.app/home" target="_blank">
     <img src="https://img.shields.io/badge/🚀%20Deploy%20na%20Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
 </p>

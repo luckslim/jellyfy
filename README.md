@@ -13,7 +13,7 @@
 ## 🖼️ Preview
 <p>
   <strong>Acesse o Link do Deploy:</strong>
-  <a href="https://jellyfyproject.vercel.app/home" target="_blank">
+  <a href="https://jellyfyproject.vercel.app" target="_blank">
     <img src="https://img.shields.io/badge/🚀%20Deploy%20na%20Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
   </a>
 </p>

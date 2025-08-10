@@ -35,13 +35,3 @@
 
 ---
 
-## ✨ Features
-
-- 🔐 Login com conta Google
-- 🛒 Adição de produtos ao carrinho
-- 💳 Pagamento com Stripe
-- 📄 Geração de comanda digital (ID)
-- 🧾 Histórico de pedidos
-- 📱 Interface friendly
-- 🚀 Deploy em Vercel
----

@@ -1,4 +1,4 @@
-# 🚀 Jellyfy
+# 🚀 Jellyfy <img src="https://jellyfyproject.vercel.app/assets/logo-jellyfy-DUknvvfn.svg" width="30" />
 
 ![status](https://img.shields.io/badge/status-Concluído-green?style=flat-square)
 ![licença](https://img.shields.io/badge/license-MIT-green?style=flat-square)
@@ -6,7 +6,7 @@
 ![GitHub Stars](https://img.shields.io/github/stars/seuusuario/repositorio?style=social)
 
 > 🧾 Uma rede Social para Desenvolvedores de software,elabore suas ideias e compartilhe conhecimento com a comunidade
-> Jellyfy <img src="https://jellyfyproject.vercel.app/assets/logo-jellyfy-DUknvvfn.svg" width="30" />
+
 
 ---
 

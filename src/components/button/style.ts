@@ -8,7 +8,7 @@ export const StyledButton = styled.button<Props>`
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 0.675rem;
+    padding: 0.5rem;
     background-color: ${({theme,type})=>type==="primary" ? theme['slate-50'] : theme['slate-950']};
     color: ${({theme,type})=>type==="primary" ? theme['slate-900'] : theme['slate-300']};
     font-weight: 500;
@@ -16,6 +16,7 @@ export const StyledButton = styled.button<Props>`
     border: ${({theme,type})=>type==="secondary" ? `1px solid ${theme['slate-700']}`: "none" };
     border-radius: ${({type})=>type==="secondary" ? "999px": "4px" };
     cursor: pointer;
+    height:fit-content;
     &:hover{
         opacity:80%;
     }

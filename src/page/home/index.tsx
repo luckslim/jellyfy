@@ -1,7 +1,7 @@
+import { Explorer } from "./explorer";
 import { Feed } from "./feed";
 import { Sidebar } from "./sidebar";
 import { SidebarMobile } from "./sidebar/sidebar-mobile";
-import { Social } from "./social";
 import { ContainerGeneralHome } from "./style";
 
 export function HomePage(){
@@ -11,7 +11,7 @@ export function HomePage(){
                 <Sidebar/>
                 <SidebarMobile/>
                 <Feed/>
-                <Social/>
+                <Explorer/>
             </ContainerGeneralHome>
         </>
     )
